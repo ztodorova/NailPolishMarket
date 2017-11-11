@@ -1,0 +1,27 @@
+﻿@using NailPolishMarket.Web.Models;
+@model NailPolishMarket.Web.Models.Catalog.ViewModel.CatalogViewModel
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table">
+        <tr>
+            <th>@Model.Name</th>
+            <td>@Model.Date</td>
+        </tr>
+       
+            @foreach (var nailPolish in Model.NailPolishes)
+            {
+                <tr>
+                    <td>@nailPolish.Name</td>
+                    <td>@nailPolish.Brand</td>
+                    <td>@nailPolish.Price</td>
+                </tr>
+            }
+           
+
+</table>
+
+

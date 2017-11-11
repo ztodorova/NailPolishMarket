@@ -1,0 +1,30 @@
+﻿@using NailPolishMarket.Web.Models;
+@model List<NailPolishMarket.Web.Models.Catalog.ViewModel.CatalogViewModel>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>@ViewBag.Message</h3>
+
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p>
+    @Html.ActionLink("Create New Catalog", "Create", "Catalog")
+</p>
+<table class="table">
+    @foreach (var item in Model)
+    {
+    <tr>
+        <th>@Html.ActionLink(item.Name, "ReturnCatalog", "Catalog", new { @id = item.Id }, null)</th>
+        <td>@item.Date</td>
+    </tr>
+    <tr>
+       
+    </tr>
+    }
+   
+</table>

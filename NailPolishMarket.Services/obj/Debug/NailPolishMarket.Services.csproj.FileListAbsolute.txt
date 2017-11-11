@@ -1,0 +1,17 @@
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\bin\Debug\NailPolishMarket.Services.dll
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\bin\Debug\NailPolishMarket.Services.pdb
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\bin\Debug\NailPolishMarket.Data.dll
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\bin\Debug\NailPolishMarket.Models.dll
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\bin\Debug\EntityFramework.dll
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\bin\Debug\NailPolishMarket.Data.pdb
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\bin\Debug\NailPolishMarket.Models.pdb
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\bin\Debug\EntityFramework.xml
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\obj\Debug\NailPolishMarket.Services.csprojResolveAssemblyReference.cache
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\obj\Debug\NailPolishMarket.Services.dll
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\obj\Debug\NailPolishMarket.Services.pdb
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\bin\Debug\NailPolishMarket.FileReader.dll
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Services\bin\Debug\NailPolishMarket.FileReader.pdb

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailPolishMarket.Models", "NailPolishMarket.Models\NailPolishMarket.Models.csproj", "{22B54CFA-7A17-4E29-87AA-7A5A594165DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailPolishMarket.Data", "NailPolishMarket.Data\NailPolishMarket.Data.csproj", "{740A43A6-98E0-4712-A8C0-579AB63089D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailPolishMarket.ConsoleClient", "NailPolishMarket.ConsoleClient\NailPolishMarket.ConsoleClient.csproj", "{2415BDE4-13E8-483B-B56B-460B80919748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailPolishMarket.Web", "NailPolishMarket.Web\NailPolishMarket.Web.csproj", "{F98DC01B-047E-47F9-ABCB-A609EA62E737}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailPolishMarket.Services", "NailPolishMarket.Services\NailPolishMarket.Services.csproj", "{6B2FF282-0E65-462F-8060-0BE5B6C541FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailPolishMarket.FileReader", "NailPolishMarket.FileReader\NailPolishMarket.FileReader.csproj", "{F2F01B89-569C-465F-B744-2C62C4DF997A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22B54CFA-7A17-4E29-87AA-7A5A594165DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B54CFA-7A17-4E29-87AA-7A5A594165DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22B54CFA-7A17-4E29-87AA-7A5A594165DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B54CFA-7A17-4E29-87AA-7A5A594165DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{740A43A6-98E0-4712-A8C0-579AB63089D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{740A43A6-98E0-4712-A8C0-579AB63089D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{740A43A6-98E0-4712-A8C0-579AB63089D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{740A43A6-98E0-4712-A8C0-579AB63089D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2415BDE4-13E8-483B-B56B-460B80919748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2415BDE4-13E8-483B-B56B-460B80919748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2415BDE4-13E8-483B-B56B-460B80919748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2415BDE4-13E8-483B-B56B-460B80919748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F98DC01B-047E-47F9-ABCB-A609EA62E737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F98DC01B-047E-47F9-ABCB-A609EA62E737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F98DC01B-047E-47F9-ABCB-A609EA62E737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F98DC01B-047E-47F9-ABCB-A609EA62E737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B2FF282-0E65-462F-8060-0BE5B6C541FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2FF282-0E65-462F-8060-0BE5B6C541FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2FF282-0E65-462F-8060-0BE5B6C541FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2FF282-0E65-462F-8060-0BE5B6C541FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F01B89-569C-465F-B744-2C62C4DF997A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F01B89-569C-465F-B744-2C62C4DF997A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F01B89-569C-465F-B744-2C62C4DF997A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F01B89-569C-465F-B744-2C62C4DF997A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

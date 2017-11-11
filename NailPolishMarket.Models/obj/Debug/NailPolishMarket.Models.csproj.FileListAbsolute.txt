@@ -1,0 +1,14 @@
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Models\bin\Debug\NailPolishMarket.Models.dll
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Models\bin\Debug\NailPolishMarket.Models.pdb
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Models\obj\Debug\NailPolishMarket.Models.dll
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Models\obj\Debug\NailPolishMarket.Models.pdb
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Models\bin\Debug\NailPolishMarket.Models.dll.config
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Models\bin\Debug\EntityFramework.dll
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Models\bin\Debug\EntityFramework.xml
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\OsystemsPC3\Desktop\Tasks\NailPolishMarket\NailPolishMarket.Models\obj\Debug\NailPolishMarket.Models.csprojResolveAssemblyReference.cache
