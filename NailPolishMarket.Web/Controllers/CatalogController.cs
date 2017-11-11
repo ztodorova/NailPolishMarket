@@ -22,21 +22,11 @@ namespace NailPolishMarket.Web.Controllers
         // GET: Catalog
         public ActionResult Index()
         {
-            var catalogs = new List<CatalogViewModel>();
+            var catalogsViewModels = new List<CatalogViewModel>();
             var catalogsData = catalogsService.GetAll();
+            catalogsViewModels = AutoMapper.Mapper.Map<List<CatalogViewModel>>(catalogsData);
 
-
-            foreach (var catalog in catalogsData)
-                {
-                    catalogs.Add(new CatalogViewModel
-                    {
-                        Id = catalog.Id,
-                        Name = catalog.Name,
-                        Date = catalog.Date,
-                    });
-                }
-            
-            return View(catalogs);
+            return View(catalogsViewModels);
         }
 
 
