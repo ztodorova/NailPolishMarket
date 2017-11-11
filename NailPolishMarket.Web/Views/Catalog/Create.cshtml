@@ -1,6 +1,44 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿@using NailPolishMarket.Web.Models;
+@model List<NailPolishMarket.Web.Models.NailPolish.ViewModel.NailPolishViewModel>
+
 
 <h1>@ViewBag.Message</h1>
+
+Catalog name: <input type="text"/><br>
+Nailpolishes:
+<select>
+    @foreach (var item in Model)
+    {
+     <option value="@item.Name">@item.Name</option>
+    }
+</select>
+<br>
+<select>
+    @foreach (var item in Model)
+    {
+        <option value="@item.Name">@item.Name</option>
+    }
+</select>
+<br>
+<select>
+    @foreach (var item in Model)
+    {
+        <option value="@item.Name">@item.Name</option>
+    }
+</select>
+<br>
+<select>
+    @foreach (var item in Model)
+    {
+        <option value="@item.Name">@item.Name</option>
+    }
+</select>
+<br>
+<select>
+    @foreach (var item in Model)
+    {
+        <option value="@item.Name">@item.Name</option>
+    }
+</select>
+<br>
 

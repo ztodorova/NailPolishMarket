@@ -40,10 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CatalogsService.cs" />
-    <Compile Include="ICatalogsService.cs" />
-    <Compile Include="IOrdersService.cs" />
-    <Compile Include="OrdersService.cs" />
+    <Compile Include="Catalogs\CatalogsService.cs" />
+    <Compile Include="Catalogs\ICatalogsService.cs" />
+    <Compile Include="NailPolishes\INailPolishesService.cs" />
+    <Compile Include="NailPolishes\NailPolishesService.cs" />
+    <Compile Include="Orders\IOrdersService.cs" />
+    <Compile Include="Orders\OrdersService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

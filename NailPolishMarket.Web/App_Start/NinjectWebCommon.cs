@@ -16,6 +16,7 @@ namespace NailPolishMarket.Web.App_Start
     using System.Data.Entity;
     using NailPolishMarket.Services;
     using Data.Data;
+    using Services.NailPolishes;
 
     public static class NinjectWebCommon 
     {
@@ -79,7 +80,7 @@ namespace NailPolishMarket.Web.App_Start
             kernel.Bind(typeof(IOrdersService)).To(typeof(OrdersService));
             kernel.Bind(typeof(INailPolishMarketData)).To(typeof(NailPolishMarketData)).InSingletonScope();
             kernel.Bind(typeof(ICatalogsService)).To(typeof(CatalogsService));
-
+            kernel.Bind(typeof(INailPolishesService)).To(typeof(NailPolishesService));
 
         }        
     }

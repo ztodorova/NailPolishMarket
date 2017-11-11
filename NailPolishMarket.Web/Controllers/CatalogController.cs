@@ -7,16 +7,19 @@ using System.Web.Mvc;
 using NailPolishMarket.Services;
 using NailPolishMarket.Web.Models.Catalog.ViewModel;
 using NailPolishMarket.Web.Models.NailPolish.ViewModel;
+using NailPolishMarket.Services.NailPolishes;
 
 namespace NailPolishMarket.Web.Controllers
 {
     public class CatalogController : Controller
     {
         private readonly ICatalogsService catalogsService;
+        private readonly INailPolishesService nailPolishesService;
 
-        public CatalogController(ICatalogsService catalogsService)
+        public CatalogController(ICatalogsService catalogsService, INailPolishesService nailpolishesService)
         {
             this.catalogsService = catalogsService;
+            this.nailPolishesService = nailpolishesService;
         }
 
         // GET: Catalog
@@ -34,12 +37,16 @@ namespace NailPolishMarket.Web.Controllers
         public ActionResult Create()
         {
             ViewBag.Message = "Creating a catalog.";
-            return View();
+            var nailPolishesData = nailPolishesService.GetAll();
+            var nailPolishesViewModels = new List<NailPolishViewModel>();
+            nailPolishesViewModels = AutoMapper.Mapper.Map<List<NailPolishViewModel>>(nailPolishesData);
+            return View(nailPolishesViewModels);
         }
 
         [HttpPost]
         public ActionResult Create(CatalogInputModel model)
         {
+            
             return View();
         }
 
