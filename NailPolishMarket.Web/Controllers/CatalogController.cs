@@ -8,6 +8,7 @@ using NailPolishMarket.Services;
 using NailPolishMarket.Web.Models.Catalog.ViewModel;
 using NailPolishMarket.Web.Models.NailPolish.ViewModel;
 using NailPolishMarket.Services.NailPolishes;
+using NailPolishMarket.Models;
 
 namespace NailPolishMarket.Web.Controllers
 {
@@ -44,9 +45,10 @@ namespace NailPolishMarket.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(CatalogInputModel model)
+        public ActionResult CreateCatalog(CatalogInputModel model)
         {
-            
+            var catalog = AutoMapper.Mapper.Map<Catalog>(model);
+            catalogsService.CreateCatalog(catalog);
             return View();
         }
 

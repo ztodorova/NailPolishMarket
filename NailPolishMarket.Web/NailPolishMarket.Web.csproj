@@ -273,6 +273,7 @@
     <Content Include="Views\Catalog\Index.cshtml" />
     <Content Include="Views\Catalog\Create.cshtml" />
     <Content Include="Views\Catalog\ReturnCatalog.cshtml" />
+    <Content Include="Views\Catalog\CreateCatalog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

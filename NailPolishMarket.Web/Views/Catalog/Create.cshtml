@@ -3,42 +3,22 @@
 
 
 <h1>@ViewBag.Message</h1>
+@using (Html.BeginForm("CreateCatalog", "Catalog", FormMethod.Post))
+{
+    @Html.Label("Catalog name:");
+    @Html.TextBox("Name")
+    <br>
+    @Html.Label("NailPolishes:");
+    <br>
+    @Html.DropDownList("NailPolish", new SelectList((Model.Select(s => s.Name) ), "Select NailPolish"));
+    <br>
+    @Html.DropDownList("NailPolish", new SelectList((Model.Select(s => s.Name)), "Select NailPolish"));
+    <br>
+    @Html.DropDownList("NailPolish", new SelectList((Model.Select(s => s.Name)), "Select NailPolish"));
+    <br>
 
-Catalog name: <input type="text"/><br>
-Nailpolishes:
-<select>
-    @foreach (var item in Model)
-    {
-     <option value="@item.Name">@item.Name</option>
-    }
-</select>
-<br>
-<select>
-    @foreach (var item in Model)
-    {
-        <option value="@item.Name">@item.Name</option>
-    }
-</select>
-<br>
-<select>
-    @foreach (var item in Model)
-    {
-        <option value="@item.Name">@item.Name</option>
-    }
-</select>
-<br>
-<select>
-    @foreach (var item in Model)
-    {
-        <option value="@item.Name">@item.Name</option>
-    }
-</select>
-<br>
-<select>
-    @foreach (var item in Model)
-    {
-        <option value="@item.Name">@item.Name</option>
-    }
-</select>
-<br>
+
+<input type="submit" value="CreateCatalog"/>
+}
+
 
