@@ -9,6 +9,7 @@ using NailPolishMarket.Web.Models.Catalog.ViewModel;
 using NailPolishMarket.Web.Models.NailPolish.ViewModel;
 using NailPolishMarket.Services.NailPolishes;
 using NailPolishMarket.Models;
+using NailPolishMarket.Web.Models.NailPolish.InputModel;
 
 namespace NailPolishMarket.Web.Controllers
 {
@@ -39,15 +40,16 @@ namespace NailPolishMarket.Web.Controllers
         {
             ViewBag.Message = "Creating a catalog.";
             var nailPolishesData = nailPolishesService.GetAll();
-            var nailPolishesViewModels = new List<NailPolishViewModel>();
-            nailPolishesViewModels = AutoMapper.Mapper.Map<List<NailPolishViewModel>>(nailPolishesData);
-            return View(nailPolishesViewModels);
+            var nailPolishesInputModels = new List<NailPolishInputModel>();
+            nailPolishesInputModels = AutoMapper.Mapper.Map<List<NailPolishInputModel>>(nailPolishesData);
+            return View(nailPolishesInputModels);
         }
 
         [HttpPost]
         public ActionResult CreateCatalog(CatalogInputModel model)
         {
             var catalog = AutoMapper.Mapper.Map<Catalog>(model);
+            catalog.Date = DateTime.Now;
             catalogsService.CreateCatalog(catalog);
             return View();
         }

@@ -1,5 +1,5 @@
 ﻿@using NailPolishMarket.Web.Models;
-@model List<NailPolishMarket.Web.Models.NailPolish.ViewModel.NailPolishViewModel>
+@model List<NailPolishMarket.Web.Models.NailPolish.InputModel.NailPolishInputModel>
 
 
 <h1>@ViewBag.Message</h1>
@@ -10,14 +10,13 @@
     <br>
     @Html.Label("NailPolishes:");
     <br>
-    @Html.DropDownList("NailPolish", new SelectList((Model.Select(s => s.Name) ), "Select NailPolish"));
+    <select>
+        @foreach (var nailPolish in @Model)
+        {
+            <option value="@nailPolish.Id">@nailPolish.Name</option>
+        }
+    </select>
     <br>
-    @Html.DropDownList("NailPolish", new SelectList((Model.Select(s => s.Name)), "Select NailPolish"));
-    <br>
-    @Html.DropDownList("NailPolish", new SelectList((Model.Select(s => s.Name)), "Select NailPolish"));
-    <br>
-
-
 <input type="submit" value="CreateCatalog"/>
 }
 
