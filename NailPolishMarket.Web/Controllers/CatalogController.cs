@@ -56,6 +56,7 @@ namespace NailPolishMarket.Web.Controllers
             var catalogInput = new CatalogInputModel();
             catalogInput.Id = model.Id;
             catalogInput.Name = model.Name;
+        
             var selected = model.NailPolishes.Where(n=>n.Selected);
             foreach (var item in selected)
             {

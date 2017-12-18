@@ -14,8 +14,8 @@ namespace NailPolishMarket.Web.Models.NailPolish.InputModel
 
         public bool Selected { get; set; }
 
-      //  public string Brand { get; set; }
+        public string Brand { get; set; }
 
-      //  public decimal Price { get; set; }
+        public decimal Price { get; set; }
     }
 }
