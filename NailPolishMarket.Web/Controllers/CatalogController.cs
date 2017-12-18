@@ -40,19 +40,33 @@ namespace NailPolishMarket.Web.Controllers
         {
             ViewBag.Message = "Creating a catalog.";
             var nailPolishesData = nailPolishesService.GetAll();
-            var nailPolishesInputModels = new List<NailPolishInputModel>();
-            nailPolishesInputModels = AutoMapper.Mapper.Map<List<NailPolishInputModel>>(nailPolishesData);
-            return View(nailPolishesInputModels);
+            var catalog = new CatalogInputModel();
+            foreach (var item in nailPolishesData)
+            {
+                var nailPolishes = AutoMapper.Mapper.Map<NailPolishInputModel>(item);
+                catalog.NailPolishes.Add(nailPolishes);
+            }
+
+            return View(catalog);
         }
 
-        [HttpPost]
-        public ActionResult CreateCatalog(CatalogInputModel model)
-        {
-            var catalog = AutoMapper.Mapper.Map<Catalog>(model);
+          [HttpPost]
+          public ActionResult CreateCatalog(CatalogInputModel model)
+          {
+            var catalogInput = new CatalogInputModel();
+            catalogInput.Id = model.Id;
+            catalogInput.Name = model.Name;
+            var selected = model.NailPolishes.Where(n=>n.Selected);
+            foreach (var item in selected)
+            {
+                catalogInput.NailPolishes.Add(item);
+            }
+           
+            var catalog = AutoMapper.Mapper.Map<Catalog>(catalogInput);
             catalog.Date = DateTime.Now;
             catalogsService.CreateCatalog(catalog);
             return View();
-        }
+          }
 
         [HttpGet]
         public ActionResult ReturnCatalog(int id)

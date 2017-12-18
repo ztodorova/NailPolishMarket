@@ -1,6 +1,5 @@
 ﻿@using NailPolishMarket.Web.Models;
-@model List<NailPolishMarket.Web.Models.NailPolish.InputModel.NailPolishInputModel>
-
+@model NailPolishMarket.Web.Models.Catalog.InputModel.CatalogInputModel
 
 <h1>@ViewBag.Message</h1>
 @using (Html.BeginForm("CreateCatalog", "Catalog", FormMethod.Post))
@@ -10,13 +9,16 @@
     <br>
     @Html.Label("NailPolishes:");
     <br>
-    <select>
-        @foreach (var nailPolish in @Model)
-        {
-            <option value="@nailPolish.Id">@nailPolish.Name</option>
-        }
-    </select>
-    <br>
+    
+    for (int i = 0; i < @Model.NailPolishes.Count(); i++)
+    {
+        @Html.CheckBoxFor(c=>c.NailPolishes[i].Selected)
+        @Model.NailPolishes[i].Name
+        @Html.HiddenFor(c=>c.NailPolishes[i].Name)
+        @Html.HiddenFor(c => c.NailPolishes[i].Id)
+        <br>
+    }
+
 <input type="submit" value="CreateCatalog"/>
 }
 
