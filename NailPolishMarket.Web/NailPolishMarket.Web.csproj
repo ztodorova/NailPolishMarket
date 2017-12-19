@@ -274,10 +274,11 @@
     <Content Include="Views\Catalog\Create.cshtml" />
     <Content Include="Views\Catalog\ReturnCatalog.cshtml" />
     <Content Include="Views\Catalog\CreateCatalog.cshtml" />
+    <Content Include="Views\NailPolish\Index.cshtml" />
+    <Content Include="Views\NailPolish\ReturnNailPolish.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\NailPolish\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -1,4 +1,6 @@
-﻿using NailPolishMarket.Web.Models.NailPolish.InputModel;
+﻿using NailPolishMarket.Services.NailPolishes;
+using NailPolishMarket.Web.Models.NailPolish.InputModel;
+using NailPolishMarket.Web.Models.NailPolish.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,15 +11,27 @@ namespace NailPolishMarket.Web.Controllers
 {
     public class NailPolishController : Controller
     {
+        private readonly INailPolishesService nailPolishesService;
+
+        public NailPolishController(INailPolishesService nailpolishesService)
+        {
+            this.nailPolishesService = nailpolishesService;
+        }
+
         // GET: NailPolish
         public ActionResult Index()
         {
-            return View();
+            var nailPolishesViewModels = new List<NailPolishViewModel>();
+            var nailPolishesData = nailPolishesService.GetAll();
+            nailPolishesViewModels = AutoMapper.Mapper.Map<List<NailPolishViewModel>>(nailPolishesData);
+
+            return View(nailPolishesViewModels);
         }
 
         [HttpGet]
         public ActionResult Create()
         {
+           
 
             return View();
         }
@@ -26,6 +40,16 @@ namespace NailPolishMarket.Web.Controllers
         public ActionResult Create(NailPolishInputModel model)
         {
             return View();
+        }
+
+        [HttpGet]
+        public ActionResult ReturnNailPolish(int id)
+        {
+
+            var nailPolish = nailPolishesService.GetNailPolishById(id);
+            var nailPolishViewModel = AutoMapper.Mapper.Map<NailPolishViewModel>(nailPolish);
+
+            return View(nailPolishViewModel);
         }
     }
 }
