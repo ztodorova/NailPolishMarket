@@ -276,6 +276,8 @@
     <Content Include="Views\Catalog\CreateCatalog.cshtml" />
     <Content Include="Views\NailPolish\Index.cshtml" />
     <Content Include="Views\NailPolish\ReturnNailPolish.cshtml" />
+    <Content Include="Views\NailPolish\Create.cshtml" />
+    <Content Include="Views\NailPolish\CreateNailPolish.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

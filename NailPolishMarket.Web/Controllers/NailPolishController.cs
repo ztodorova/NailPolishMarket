@@ -1,4 +1,5 @@
-﻿using NailPolishMarket.Services.NailPolishes;
+﻿using NailPolishMarket.Models;
+using NailPolishMarket.Services.NailPolishes;
 using NailPolishMarket.Web.Models.NailPolish.InputModel;
 using NailPolishMarket.Web.Models.NailPolish.ViewModel;
 using System;
@@ -30,9 +31,7 @@ namespace NailPolishMarket.Web.Controllers
 
         [HttpGet]
         public ActionResult Create()
-        {
-           
-
+        {  
             return View();
         }
 
@@ -42,10 +41,18 @@ namespace NailPolishMarket.Web.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult CreateNailPolish(NailPolishInputModel model)
+        {
+            var nailPolish = AutoMapper.Mapper.Map<NailPolish>(model);
+            this.nailPolishesService.CreateNailPolish(nailPolish);
+            return View();
+        }
+
+
         [HttpGet]
         public ActionResult ReturnNailPolish(int id)
         {
-
             var nailPolish = nailPolishesService.GetNailPolishById(id);
             var nailPolishViewModel = AutoMapper.Mapper.Map<NailPolishViewModel>(nailPolish);
 
