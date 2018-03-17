@@ -5,7 +5,11 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@section scripts
+{
+<script src="~/Scripts/add-to-cart.js"></script>  
 
+}
 <table class="table">
         <tr>
             <th>@Model.Name</th>
@@ -14,14 +18,17 @@
        
             @foreach (var nailPolish in Model.NailPolishes)
             {
-                <tr>
-                    <td>@nailPolish.Name</td>
-                    <td>@nailPolish.Brand</td>
-                    <td>@nailPolish.Price</td>
+                
+                <tr >
+                        <td class="nailpolishid" data-nail-polish-id="@nailPolish.Id">@nailPolish.Id</td>
+                        <td class="nailpolishname">@nailPolish.Name</td>
+                        <td class="nailpolishbrand">@nailPolish.Brand</td>
+                        <td class="nailpolishprice">@nailPolish.Price</td>
+                        <td ><button type="button" class="addToCart">Add to Cart</button></td>
                 </tr>
-            }
-           
-
+            }    
 </table>
+
+ 
 
 
