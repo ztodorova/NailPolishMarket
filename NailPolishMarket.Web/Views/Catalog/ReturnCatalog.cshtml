@@ -19,12 +19,14 @@
             @foreach (var nailPolish in Model.NailPolishes)
             {
                 
-                <tr >
+                <tr>
                         <td class="nailpolishid" data-nail-polish-id="@nailPolish.Id">@nailPolish.Id</td>
                         <td class="nailpolishname">@nailPolish.Name</td>
                         <td class="nailpolishbrand">@nailPolish.Brand</td>
                         <td class="nailpolishprice">@nailPolish.Price</td>
-                        <td ><button type="button" class="addToCart">Add to Cart</button></td>
+
+                        <td >@Html.ActionLink("Add to Cart", "AddToCart", "ShoppingCart", new { id = nailPolish.Id}, null)</td>
+                    
                 </tr>
             }    
 </table>

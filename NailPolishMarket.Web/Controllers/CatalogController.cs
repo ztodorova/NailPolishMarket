@@ -76,6 +76,8 @@ namespace NailPolishMarket.Web.Controllers
             var catalog = catalogsService.GetCatalogById(id);
             var catalogViewModel = AutoMapper.Mapper.Map<CatalogViewModel>(catalog);
 
+
+
             return View(catalogViewModel);
         }
     }
