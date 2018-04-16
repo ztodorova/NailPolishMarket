@@ -393,6 +393,7 @@ namespace NailPolishMarket.Web.Controllers
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            Session["cart"] = null;
             return RedirectToAction("Index", "Home");
         }
 
